@@ -10,4 +10,4 @@ function KnowledgeCard({ item }) {
   );
 }
 
-export default KnowledgeCard;
+export default KnowledgeCard; 

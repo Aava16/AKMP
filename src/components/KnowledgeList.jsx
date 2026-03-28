@@ -1,4 +1,4 @@
-import KnowledgeCard from "./KnowledgeCard.jsx";
+import KnowledgeCard from "../KnowledgeCard";
 
 function KnowledgeList({ data }) {
   if (data.length === 0) {
@@ -6,11 +6,16 @@ function KnowledgeList({ data }) {
   }
 
   return (
+    <div>
     <div className="grid">
       {data.map(item => (
         <KnowledgeCard key={item.id} item={item} />
+        
       ))}
+      
     </div>
+    <button onClick={() => window.history.back()} style={{ marginTop: '40px' }}>← Back</button>
+    </div> 
   );
 }
 
